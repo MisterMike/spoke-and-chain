@@ -1,7 +1,7 @@
 
 {% set radio = radio is not defined ? false : radio %}
 {% set account = account is not defined ? true : account %}
-{% set paymentSources = craft.commerce.paymentSources.getAllPaymentSourcesByUserId(currentUser.id) %}
+{% set paymentSources = craft.commerce.paymentSources.getAllPaymentSourcesByCustomerId(currentUser.id) %}
 
 <!-- Template: {{ _self }}.twig -->
 <div class="space-y-2">
